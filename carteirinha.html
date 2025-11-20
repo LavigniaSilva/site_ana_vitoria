@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carteirinha</title>
+
+
+	<style>
+		
+		h1{
+			color:#9A3F3F ;
+			text-align: center;
+		}
+
+		.formulario{
+
+			background-color: #F9F5F0;
+			border-radius: 5px;
+		    border: 2px solid darkred; 
+		    padding: 20px; 
+		    display: flex;
+		    flex-direction: column;
+		    gap: 15px;
+
+		}
+
+		input{
+
+			border-radius: 5px;
+	
+		}
+
+		.teste a:link  {
+
+			color:  #662222;
+		}
+
+		.formulario legend{
+
+			color: #662222;
+			border-colo: none;
+
+
+		}
+
+		label{
+
+			color: #662222;
+		}
+
+		.botao{
+			background-color:#D9CFC7;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .botao:hover{
+        	transform: translateY(-5px);
+            background-color: #9A3F3F; 
+        }
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="teste">
+	<a href="siteanavitoria.html">Voltar</a>
+	</div>
+
+	<h1 ><ins><i>Venha ser Fã de Carteirinha</i><ins></h1>
+
+	<p>Preencha o formulário e encomende sua carteirinha, para usar em shows, eventos etc.</p>
+
+		<hr>
+
+		<form>
+
+
+		<div class="formulario">
+			
+			<fieldset>
+			
+			<b>Preencha Seus Dados</b>
+
+
+			<br><br>
+			<label for="nome"><b>Nome:</b></label><br>
+			<input type="text" size="40" maxlength="20" minlength="2" required id="nome" name="name" placeholder="Digite seu nome">
+
+			<br></br>
+			<label for="idade"><b>Idade</b></label><br>
+			<input type="number" name="idade" id="idade" min="14" max="60" placeholder="14+">
+
+			<br></br>
+			<label for="sexo"><b>Sexo</b></label><br>
+			F <input type="radio" id="sexo" name="sexo" value="F" checked>
+			M <input type="radio" id="sexo" name="sexo" value="M">
+
+			<br></br>
+			<label for="dtNasc"><b>Data de Nascimento</b></label><br>
+			<input type="date" id="dtNasc" name="dtNasc">
+
+			<br></br>
+			<label for="idolo"><b>Ídolo</b></label><br>
+			<input type="text" name="idolo" id="idolo" disabled placeholder="Anavitória">
+
+			<br><br>
+			<button class="botao">Enviar</button>
+		
+	</fieldset>
+		
+	</div>
+
+</body>
+</html>
